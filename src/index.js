@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import MainContainer from "./containers/MainContainer/MainContainer";
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://restcountries.eu/rest/v2';
+
 
 ReactDOM.render(<MainContainer />, document.getElementById('root'));
 
